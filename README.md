@@ -22,6 +22,23 @@ php artisan serve
 ```
 Aller sur la page [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
+## Requêtes SQL utiles
+```
+-- Liste des catégories et de leurs plats
+SELECT plats.id, plats.nom, categories.id, categories.nom
+FROM categories
+INNER JOIN plats ON categories.id = plats.categories_id;
+```
+
+```
+-- Liste des plats et de leurs étiquettes
+SELECT plats.id, plats.nom, etiquettes.id, etiquettes.nom
+FROM plats
+INNER JOIN etiquettes_plats ON etiquettes_plats.plats_id = plats.id
+INNER JOIN etiquettes ON etiquettes_plats.etiquettes_id = etiquettes.id
+ORDER BY plats.nom,etiquettes.nom;
+```
+
 ## Recommendations
 
 ### Tailles des images d'ambiance
