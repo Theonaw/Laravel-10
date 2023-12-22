@@ -14,6 +14,31 @@ Ce projet est un site web test pour la formation Devweb du CNAM.
 
 @TODO
 
+### Version dev
+Il faut d'abord cloner l'application en local:
+```
+git clonehttps//github.com/jibundeyare/cnam-nfa021-2023-2024-laravel-10
+```
+
+Ensuite, il faut créer une BDD puis configurer les accès à la BDD dans le fichier `.env`:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mon_application
+DB_USERNAME=mon_application
+DB_PASSWORD=123
+```
+Pour créer la BDD, vous pouvez utilisez un script bash:
+```
+./mkdb.sh
+```
+
+Vous pouvez donner un nom à l'application dans le fichier `.env`:
+```
+APP_NAME="Mon Application"
+```
+
 ## Utilisation
 
 Dans le terminal:
