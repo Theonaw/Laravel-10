@@ -17,7 +17,7 @@ Ce projet est un site web test pour la formation Devweb du CNAM.
 ### Version dev
 Il faut d'abord cloner l'application en local:
 ```
-git clonehttps//github.com/jibundeyare/cnam-nfa021-2023-2024-laravel-10
+git clone https//github.com/jibundeyare/cnam-nfa021-2023-2024-laravel-10
 ```
 
 Ensuite, il faut créer une BDD puis configurer les accès à la BDD dans le fichier `.env`:
