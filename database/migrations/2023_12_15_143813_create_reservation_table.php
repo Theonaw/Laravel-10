@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('nom');
             $table->integer('couvert');
             $table->time('heure');
-            $table->date('date');
+            $table->date('jour');
             $table->string('telephone');
-            $table->text('commentaire');
+            $table->text('commentaire')->nullable();
             $table->timestamps();
         });
     }

@@ -18,6 +18,10 @@ Route::get('/', [MainController::class, 'home'])->name('main.home');
 
 Route::get('/menu', [MainController::class, 'menu'])->name('main.menu'); 
 
+Route::get('/a-propos', [MainController::class, 'a-propos'])->name('main.a-propos');
+
+Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
+
 Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');
 
-Route::get('/a-propos', [MainController::class, 'a-propos'])->name('main.a-propos');
+Route::post('/reservation', [MainController::class, 'reservationStore'])->name('main.reservation.store');

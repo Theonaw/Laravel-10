@@ -3,19 +3,25 @@
 @section('title', 'Menu')
 
 @section('content')
+
     <section>
     <h2>Menu</h2>
     @foreach ($categories as $categorie)
     <div>
-        <h3>{{ $categorie }}</h3>
+        <h3>{{ $categorie->nom }}</h3>
         <ul class="plats">
-            @for ($i = 0; $i < 3; $i++)
+            @foreach ($categorie->plats() as $plat)
             <li>
-                <img src="/images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="verdura e carne sulla ciotola">
-                <h4>Lorem, ipsum dolor</h4>
-                <span class="prix">9,99€</span>
+                <a href="{{ route('main.plat',['id' => $plat->id])}}"><img src="{{ asset('images/'.$plat->fichier)}}" alt="{{$plat->nom}}"></a>
+                <a href="{{ route('main.plat',['id' => $plat->id])}}"><h4>{{ $plat->nom }}</h4></a>
+                <span class="prix">{{$plat->prix}} eur</span>
+                <ul>
+                    @foreach ($plat->etiquettes() as $etiquette)
+                        <li>{{$etiquette->nom}}</li>
+                    @endforeach
+                </ul>
             </li>
-            @endfor
+            @endforeach
         </ul>
     </div>
     @endforeach
