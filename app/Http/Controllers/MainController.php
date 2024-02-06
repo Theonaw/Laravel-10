@@ -25,10 +25,13 @@ class MainController extends Controller
     public function home()
     {
         $actus = Actu::all();
+        $photoAmbiance = PhotoAmbiance::all();
+
         return view('home', [
             'actus' => $actus,
-            // 'reservations' => $reservations
-        ]);
+            'photoAmbiances' => $photoAmbiance,
+            ]);
+            
     }
 
     public function menu()
