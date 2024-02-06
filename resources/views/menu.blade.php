@@ -31,5 +31,3 @@
     </footer>
     </section>
 @endsection
-</body>
-</html>

@@ -26,7 +26,9 @@ class MainController extends Controller
     {
         $actus = Actu::all();
         return view('home', [
-            'actus' => $actus,]);
+            'actus' => $actus,
+            // 'reservations' => $reservations
+        ]);
     }
 
     public function menu()
@@ -52,7 +54,7 @@ class MainController extends Controller
 
     public function apropos()
     {
-        return view('a-propos');
+        return view('apropos');
     }
 
     public function reservationStore(Request $request)
@@ -83,14 +85,19 @@ class MainController extends Controller
             'reservation'=>$reservation]);
     }
 
-    public function adminReservationIndex()
+    public function reservationIndex()
     {
-        return view('adminReservation');
+        $reservations = Reservation::all();
+        return view('reservationIndex',['reservations'=>$reservations]);
     }
 
-    public function adminReservationShow()
+    public function ReservationShow(int $id)
     {
-        
+        $reservationShow = Reservation::find($id);
+
+        return view('reservationShow',[
+            'reservationShow' => $reservationShow
+        ]);
     }
 
 }

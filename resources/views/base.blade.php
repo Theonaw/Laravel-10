@@ -12,7 +12,7 @@
             <a href="{{ route('main.home') }}">Accueil</a>
             <a href="{{ route('main.menu') }}">Menu</a>
             <a href="{{ route('main.reservation') }}">Réservation</a>
-            <a href="{{ route('main.a-propos') }}">A Propos</a>
+            <a href="{{ route('main.apropos') }}">A Propos</a>
         </nav>
     </header>
     @yield('content')
