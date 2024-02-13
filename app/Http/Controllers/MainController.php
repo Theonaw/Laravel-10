@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PhotoAmbiance;
 use App\Models\Actu;
 use App\Models\Categorie;
 use App\Models\Plat;
@@ -87,20 +88,4 @@ class MainController extends Controller
         return view('reservationStore', [
             'reservation'=>$reservation]);
     }
-
-    public function reservationIndex()
-    {
-        $reservations = Reservation::all();
-        return view('reservationIndex',['reservations'=>$reservations]);
-    }
-
-    public function ReservationShow(int $id)
-    {
-        $reservationShow = Reservation::find($id);
-
-        return view('reservationShow',[
-            'reservationShow' => $reservationShow
-        ]);
-    }
-
 }

@@ -1,0 +1,3 @@
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Théo', 'steelice12@gmail.com', NULL, '$2y$12$dBNCZleJ5hUR2XTkrkNNbuCOjbK27kWNwliouHc0ujqdBogLE/cWq', NULL, '2024-02-09 10:43:01', '2024-02-09 10:43:01'),
+(2, 'Admin', 'admin@exemple.com', NULL, '$2y$12$uoCJHbXBplbGmiKtm68yze9pvsOpJa2ukUWqwxyVIjlG/JW/F2992', NULL, '2024-02-09 15:34:44', '2024-02-09 15:34:44');
