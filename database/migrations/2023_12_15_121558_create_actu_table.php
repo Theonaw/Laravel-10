@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('actus', function (Blueprint $table) {
             $table->id();
             $table->dateTime('date_publication');
+            $table->string('titre');
             $table->text('description');
             $table->timestamps();
         });

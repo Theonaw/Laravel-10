@@ -16,7 +16,7 @@
 
 <ul>
     @foreach ($actus as $actu)
-        <li>{{ $actu->contenu }} ({{ $actu->date_publication }})</li>
+        <li>{{ $actu->titre }}<br><br>{{ $actu->description }}<br><br>({{ $actu->date_publication }})</li>
     @endforeach
 </ul>
 

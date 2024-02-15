@@ -30,11 +30,17 @@ Route::post('/reservation', [MainController::class, 'reservationStore'])->name('
 
 Route::get('/admin/reservation', [AdminReservationController::class, 'index'])->middleware('auth')->name('admin.reservation.index');
 
+Route::post('/admin/reservation/create', [AdminReservationController::class, 'create'])->middleware('auth')->name('admin.reservation.create');
+
+Route::post('/admin/reservation', [AdminReservationController::class, 'store'])->middleware('auth')->name('admin.reservation.store');
+
 Route::get('/admin/reservation/{id}', [AdminReservationController::class,'show'])->middleware('auth')->name('admin.reservation.show');
 
 Route::get('/admin/reservation/{id}/edit', [AdminReservationController::class,'edit'])->middleware('auth')->name('admin.reservation.edit');
 
 Route::put('/admin/reservation/{id}', [AdminReservationController::class,'update'])->middleware('auth')->name('admin.reservation.update');
+
+Route::delete('/admin/reservation/{id}', [AdminReservationController::class,'delete'])->middleware('auth')->name('admin.reservation.delete');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
