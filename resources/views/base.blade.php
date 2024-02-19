@@ -18,7 +18,20 @@
     <div class="debut"></div>
     @yield('content')
     <footer>
-        <h2><a href="{{ route('main.mention') }}">Mentions légales</a></h2>
+        <div class="footer">
+            <h2 class="ft1"><a href="{{ route('main.menu') }}">Menu</a></h2>
+            <h2><a href="{{ route('main.home') }}">Accueil</a></h2>
+            <h2><a href="{{ route('main.reservation') }}">Réservation</a></h2>
+            <h2><a href="{{ route('main.mention') }}">Mentions légales</a></h2>
+            <h2><a href="{{ route('main.apropos') }}">A Propos</a></h2>
+        </div>
+        <div class="reseau">
+            <h2>Nos réseau :</h2>
+            <a href="#"><img src="images/insta.jpeg" alt=""></a>
+            <a href="#"><img src="images/Linkdin.png" alt=""></a>
+            <a href="#"><img src="images/facebook.jpeg" alt=""></a>
+            <a href="#"><img src="images/tiktok.png" alt=""></a>
+        </div>
     </footer>
 </body>
 </html>
