@@ -19,7 +19,7 @@ class Plat extends Model
     public function etiquettes()
     {
         return$this
-        ->belongsToMany(Plat::class,'etiquettes_plats', 'etiquettes_id', 'plats_id')
+        ->belongsToMany(Etiquette::class,'etiquettes_plats', 'plats_id', 'etiquettes_id')
         ->get();
     }
 }

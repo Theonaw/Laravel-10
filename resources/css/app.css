@@ -17,3 +17,37 @@
 .invalid-feedback {
     color: red;
 }
+
+.img {
+    padding-right: 3%;
+    animation: slider 20s infinite;
+    
+}
+
+.slider {
+    margin-left: 20%;
+    display: flex;
+    width:70%;
+    border: 1px solid;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+@keyframes slider{
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+    30%,
+    35% {
+        transform: translateX(-700px);
+    }
+    60%,
+    65% {
+        transform: translateX(-1400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
