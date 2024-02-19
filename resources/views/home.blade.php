@@ -15,9 +15,10 @@
 </div>
 <ul>
 <br>
-<ul>
+<ul class="actus">
     @foreach ($actus as $actu)
         <li>{{ $actu->titre }}<br><br>{{ $actu->description }}<br><br>({{ $actu->date_publication }})</li>
+        <br>
     @endforeach
 </ul>
 

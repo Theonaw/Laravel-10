@@ -3,10 +3,10 @@
 @section('title', 'Menu')
 
 @section('content')
-
     <section>
     <h2>Menu</h2>
     @foreach ($categories as $categorie)
+    <hr>
     <div>
         <h3>{{ $categorie->nom }}</h3>
         <ul class="plats">

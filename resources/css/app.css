@@ -19,19 +19,18 @@
 }
 
 body{
-    background-image: url("/images/fonddepage.jpeg");
+    background-image: url("/images/fonddepage.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .img {
     padding-right: 3%;
     animation: slider 20s infinite;
-    
 }
 
 .slider {
-    margin-left: 20%;
+    margin-left: 14%;
     display: flex;
     width:70%;
     border: 1px solid;
@@ -56,4 +55,28 @@ body{
     100% {
         transform: translateX(0px);
     }
+}
+
+section,.actus{
+    background-color: rgb(158, 156, 156, 0.35);
+    border: rgb(0, 0, 0) 2px solid;
+    display: block;
+    padding: 5px;
+}
+
+nav{
+    background-color: rgba(158, 156, 156, 0.35);
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: rgb(0, 0, 0) 2px solid;
+}
+
+hr:first-of-type{
+    visibility: hidden;
+}
+
+hr{
+    border-color: black;
 }
