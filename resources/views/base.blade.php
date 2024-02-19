@@ -19,7 +19,7 @@
     @yield('content')
     <footer>
         <div class="footer">
-            <h2 class="ft1"><a href="{{ route('main.menu') }}">Menu</a></h2>
+            <h2><a href="{{ route('main.menu') }}">Menu</a></h2>
             <h2><a href="{{ route('main.home') }}">Accueil</a></h2>
             <h2><a href="{{ route('main.reservation') }}">Réservation</a></h2>
             <h2><a href="{{ route('main.mention') }}">Mentions légales</a></h2>
