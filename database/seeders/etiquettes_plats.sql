@@ -1,4 +1,4 @@
-insert into etiquettes_plats (etiquettes_id, plats_id) values (14, 1);
+insert into etiquettes_plats (etiquettes_id, plats_id) values (13, 1);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (2, 2);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (15, 2);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (6, 3);
