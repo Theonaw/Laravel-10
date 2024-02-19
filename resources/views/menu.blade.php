@@ -3,8 +3,9 @@
 @section('title', 'Menu')
 
 @section('content')
+    <h1>Menu</h1>
     <section>
-    <h2>Menu</h2>
+    
     @foreach ($categories as $categorie)
     <hr>
     <div>

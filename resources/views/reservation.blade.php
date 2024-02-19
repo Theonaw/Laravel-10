@@ -3,8 +3,8 @@
 @section('title','Réservation')
 
 @section('content')
-<section>
-    <h2>Réservation</h2>
+<h1>Réservation</h1>
+<section class="reservation">
     {{-- <div>
         @foreach ($errors->all()as $error)
             {{$error}}

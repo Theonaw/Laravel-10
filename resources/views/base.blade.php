@@ -15,6 +15,7 @@
             <a href="{{ route('main.apropos') }}">A Propos</a>
         </nav>
     </header>
+    <div class="debut"></div>
     @yield('content')
     <footer>
         <h2><a href="{{ route('main.mention') }}">Mentions légales</a></h2>

@@ -25,18 +25,17 @@ body{
 }
 
 .img {
+    width: 95%;
     padding-right: 3%;
     animation: slider 20s infinite;
 }
 
 .slider {
-    margin-left: 14%;
     display: flex;
-    width:70%;
+    width:50%;
     border: 1px solid;
     height: 500px;
     overflow: hidden;
-
 }
 
 @keyframes slider{
@@ -46,11 +45,11 @@ body{
     }
     30%,
     35% {
-        transform: translateX(-700px);
+        transform: translateX(-600px);
     }
     60%,
     65% {
-        transform: translateX(-1400px);
+        transform: translateX(-1100px);
     }
     100% {
         transform: translateX(0px);
@@ -58,14 +57,15 @@ body{
 }
 
 section,.actus{
-    background-color: rgb(158, 156, 156, 0.35);
+    background-color: rgba(155, 154, 154, 0.35);
     border: rgb(0, 0, 0) 2px solid;
     display: block;
-    padding: 5px;
+    padding-left: 20px;
+    width: 50%;
 }
 
 nav{
-    background-color: rgba(158, 156, 156, 0.35);
+    background-color: rgb(155, 154, 154);
     display: block;
     padding: 5px;
     margin-bottom: 20px;
@@ -77,6 +77,40 @@ hr:first-of-type{
     visibility: hidden;
 }
 
+ul {
+    padding: 0px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    left: 38%;
+    z-index: 40;
+    font-size: larger;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+.reservation{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 hr{
-    border-color: black;
+    border-color: rgb(0, 0, 0,0.5);
+    padding: 0px;
+}
+
+.flex{
+    display: flex;
+}
+
+.debut{
+    padding-top: 50px;
 }
