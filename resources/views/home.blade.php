@@ -3,7 +3,7 @@
 @section('title', 'Acceuil')
 
 @section('content')
-<h1>Hello Laravel</h1>
+<h1>Bienvenue</h1>
 
 <ul class="ambiance">
     @foreach ($photoAmbiances as $photoAmbiance)

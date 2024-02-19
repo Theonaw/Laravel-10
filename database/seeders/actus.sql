@@ -1,0 +1,2 @@
+INSERT INTO actus (`id`, `date_publication`, `titre`, `description`, `created_at`, `updated_at`) VALUES
+(1, '2024-02-15 15:22:12', 'Teste de gros kebab', 'dfgns vjhhui h ughhfg hj? hg fudj ??.Pk; FOg,d,o ?dl l,;kjek hkJPOkdigj njkdhc shi hddlj obcxkl nhu jj nkM,?.L .. .?. ?ILfjdi jiodjvioskvd', '2024-02-13 14:22:12', '2024-02-13 14:22:12');
