@@ -88,4 +88,8 @@ class MainController extends Controller
         return view('reservationStore', [
             'reservation'=>$reservation]);
     }
+    public function mention()
+    {
+        return view('mention');
+    }
 }

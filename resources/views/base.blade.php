@@ -17,7 +17,7 @@
     </header>
     @yield('content')
     <footer>
-        <!-- TODO -->
+        <h2><a href="{{ route('main.mention') }}">Mentions légales</a></h2>
     </footer>
 </body>
 </html>
