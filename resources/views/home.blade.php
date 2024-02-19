@@ -10,13 +10,14 @@
         <div class="actus">
             @foreach ($actus as $actu)
                 <hr>
-                <span >{{ $actu->titre }}<br><br>{{ $actu->description }}<br><br>({{ $actu->date_publication }})</span>
+                <span>{{ $actu->titre }}<br><br>{{ $actu->description }}<br><br>({{ $actu->date_publication }})</span>
             @endforeach
         </div>
         <br>
         <div class="slider">
             @foreach ($photoAmbiances as $photoAmbiance)
                 <img src="{{asset('images/'.$photoAmbiance->fichier)}}" alt="ff" class="img">
+                <div class="slid"><h3 class="slideAmbiance">{{$photoAmbiance->description}}</h3></div>
             @endforeach
         </div>
     </div>

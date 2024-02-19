@@ -30,9 +30,11 @@ body{
 }
 
 .img {
+    position: relative;
     width: 95%;
     padding-right: 3%;
     animation: slider 20s infinite;
+    height: 90%;
 }
 
 .slider {
@@ -61,12 +63,11 @@ body{
     }
 }
 
-    ,.actus{
+section,.actus,.border{
     background-color: rgba(155, 154, 154, 0.35);
     border: rgb(0, 0, 0) 2px solid;
     display: block;
     padding-left: 20px;
-    width: 50%;
 }
 
 nav{
@@ -169,4 +170,11 @@ footer{
 .reseau img {
     width: 10%;
     height: 100px;
+}
+
+.slid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

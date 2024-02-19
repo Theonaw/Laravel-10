@@ -3,7 +3,9 @@
 @section('title','Admin - Réservation - Edit')
 
 @section('content')
+<section class="reservation">
     <h2>Admin - Réservation - Edit</h2>
+    <a href="{{ route('admin.reservation.index') }}">Retour</a>
         {{-- <div class="invalid-feedback">
             @foreach ($errors->all()as $error)
                 {{$error}}
@@ -64,4 +66,5 @@
                 <button type="submit">Modifier</button>
             </div>
         </form>
+</section>
 @endsection
