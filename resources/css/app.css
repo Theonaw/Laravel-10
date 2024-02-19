@@ -17,3 +17,9 @@
 .invalid-feedback {
     color: red;
 }
+
+body{
+    background-image: url("/images/fonddepage.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

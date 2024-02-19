@@ -7,10 +7,7 @@
 
 <ul class="ambiance">
     @foreach ($photoAmbiances as $photoAmbiance)
-    <li>
-        <img src="{{asset('images/'.$photoAmbiance->fichier)}}" alt="ff">
-        <p>{{$photoAmbiance->description}}</p>
-    </li>
+        <img src="{{asset('images/'.$photoAmbiance->fichier)}}" alt="ff" class="img">
     @endforeach
 <ul>
 
@@ -21,5 +18,3 @@
 </ul>
 
 @endsection
-
-
