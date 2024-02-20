@@ -4,8 +4,8 @@
 
 @section('content')
     <section>
-        <h2>Admin - Réservation - Show</h2>
         <a href="{{ route('admin.reservation.index') }}">Retour</a>
+        <h2>Admin - Réservation - Show</h2>
         <h3>Nom: {{ $reservationShow->nom }}</h3>
         <h3>Nombre de couverts: {{ $reservationShow->couvert }}</h3>
         <h3>Heure: {{ $reservationShow->heure }}</h3>

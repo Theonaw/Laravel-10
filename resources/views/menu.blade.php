@@ -26,9 +26,5 @@
         </ul>
     </div>
     @endforeach
-
-    <footer>
-        <!-- TODO -->
-    </footer>
     </section>
 @endsection
