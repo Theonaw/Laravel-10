@@ -59,4 +59,9 @@ class AdminActusController extends Controller
 
         return redirect()->route('admin.actus.index');
     }
+
+    public function create()
+    {
+        return view('admin.actus.create');
+    }
 }

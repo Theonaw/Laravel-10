@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title','Vos réservations')
+@section('title','Vos actus')
 
 @section('content')
 <section>
