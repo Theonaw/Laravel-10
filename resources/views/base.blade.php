@@ -17,6 +17,8 @@
     </header>
     <div class="debut"></div>
     @yield('content')
+    @if(strpos(url()->current(),"admin")==false)
+    {{-- permet de le cacher le footer si dans l'url il y a "admin" --}}
     <footer>
         <div class="footer">
             <h2><a href="{{ route('main.menu') }}">Menu</a></h2>
@@ -33,5 +35,6 @@
             <a href="#"><img src="images/tiktok.jpg" alt=""></a>
         </div>
     </footer>
+    @endif
 </body>
 </html>
