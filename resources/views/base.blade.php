@@ -27,10 +27,10 @@
         </div>
         <div class="reseau">
             <h2>Nos réseau :</h2>
-            <a href="#"><img src="images/insta.jpeg" alt=""></a>
-            <a href="#"><img src="images/Linkdin.png" alt=""></a>
-            <a href="#"><img src="images/facebook.jpeg" alt=""></a>
-            <a href="#"><img src="images/tiktok.png" alt=""></a>
+            <a href="#"><img src="images/insta.jpg" alt=""></a>
+            <a href="#"><img src="images/twitter.jpg" alt=""></a>
+            <a href="#"><img src="images/facebook.jpg" alt=""></a>
+            <a href="#"><img src="images/tiktok.jpg" alt=""></a>
         </div>
     </footer>
 </body>
