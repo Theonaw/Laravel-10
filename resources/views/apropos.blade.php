@@ -11,8 +11,9 @@
 <p>adresse : 5 Bd Louis XIV, 59800 Lille</p>
 <p class="Ap-tel">télephone : 01 23 45 67 89</p>
 </div>
-<h2>Ouvert du lundi au vendredi de :</h2>
-<div class="slideAmbiance">
+<div class="border">
+    <h2>Ouvert du lundi au vendredi de :</h2>
+    <div class="slideAmbiance">
     <table>
     <tr>
         <th>
@@ -41,6 +42,7 @@
     <tr><td>21:00</td><td>21:00</td><td>21:00</td><td>21:00</td><td>21:00</td>
     <tr><td>21:30</td><td>21:30</td><td>21:30</td><td>21:30</td><td>21:30</td>
     </table>
+    </div>
 </div>
     <h1><a href="{{ route('main.reservation') }}">Réservation</a></h1>
 @endsection

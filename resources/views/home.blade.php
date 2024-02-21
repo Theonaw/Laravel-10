@@ -17,7 +17,6 @@
         <div class="slider">
             @foreach ($photoAmbiances as $photoAmbiance)
                 <img src="{{asset('images/'.$photoAmbiance->fichier)}}" alt="ff" class="img">
-                <div class="slid"><h3 class="slideAmbiance">{{$photoAmbiance->description}}</h3></div>
             @endforeach
         </div>
     </div>
